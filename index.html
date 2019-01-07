@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var DOMobject = document.createElement('div');
+      DOMobject.id = "myDiv";
+      DOMobject.style.width = "100px";
+      DOMobject.style.height = "100px";
+      DOMobject.style.background = "red";
+      DOMobject.innerText = "C'est ma div";
+
+      document.body.appendChild(DOMobject);
+
+      var spanElement = document.createElement('span');
+
+      spanElement.innerText = "C'est un span"
+
+      document.getElementById('myDiv').appendChild(spanElement);
+
+    </script>
+  </body>
+</html>
